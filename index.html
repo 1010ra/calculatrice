@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculatrice</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree&family=League+Spartan:wght@700&display=swap"
+        rel="stylesheet">
+</head> 
+<body>
+    <div class="calculatrice theme1  ">
+        <div class="calcula">
+            <h1>calculator</h1>
+            <div class="theme">
+                <h6>Theme</h6>
+            </div>
+            <div class="divPoint">
+                <div class="label">
+                    <label for="">1</label>
+                    <label for="">2</label>
+                    <label for="">3</label>
+                </div>
+                <div class="cercle">
+                    <span id="one"></span>
+                    <span id="two"></span>
+                    <span id="tree"></span>
+                </div>
+            </div>
+        </div>
+        <input id="ecran" type="text" placeholder="123" readonly>
+        <div class="clavier ">
+            <div class="ligne1">
+                <button onclick="appendNumber('7')" class="btn-operator"  id="7">7</button>
+                <button onclick="appendNumber('8')" class="btn-operator"  id="8">8</button>
+                <button onclick="appendNumber('9')" class="btn-operator"  id="9">9</button>
+                <button onclick="btmClean()" class="btn-operator" id="del">Del</button>
+            </div>
+            <div class="ligne2">
+                <button onclick="appendNumber('4')" class="btn-operator" id="4">4</button>
+                <button onclick="appendNumber('5')" class="btn-operator"  id="5">5</button>
+                <button onclick="appendNumber('6')" class="btn-operator" id="6">6</button>
+                <button onclick="appendOpperator('+') "class="btn-operator" id="+">+</button>
+            </div>
+            <div class="ligne3">
+                <button onclick="appendNumber('1')" class="btn-operator"  id="1">1</button>
+                <button onclick="appendNumber('2')"  class="btn-operator" id="2">2</button>
+                <button onclick="appendNumber('3')" class="btn-operator"  id="3">3</button>
+                <button onclick="appendOpperator('-') " class="btn-operator" id="-">-</button>
+            </div>
+            <div class="ligne4">
+                <button onclick="point()" class="btn-operator" id=".">.</button>
+                <button  onclick="appendNumber('0')"  class="btn-operator" id="0">0</button>
+                <button  onclick="appendOpperator('/')" class="btn-operator" id="/">÷</button>
+                <button onclick="appendOpperator('*')" class="btn-operator" id="*">*</button>
+            </div>
+            <div class="ligne5">
+                <button onclick="effacer()" class="btn-operator" id="reset">RESET</button>
+                <button onclick="egalite()" class="btn-operator" id="egal">=</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="appl.js"></script>
+</body>
+</html>
